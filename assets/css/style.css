@@ -1,0 +1,813 @@
+/* common css start */
+:root {
+	--1st-primary-color-light: #ff6f61;
+	--2nd-primary-color-dark: #ff5645;
+	--common-color: #fff;
+	--text-color: #11161e;
+	--hover-color: #151a32;
+	--paragraph-color: #444;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+	--a6aab7: #a6aab7;
+    --font-family: "Josefin Sans", sans-serif;
+    --second-family: "Roboto", sans-serif;
+}
+/* common css end */
+
+/* top bar css start */
+#top{
+    background-color: var(--hover-color);
+    padding: 11px 0;
+}
+#top .top_left{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--common-color);
+}
+.top_left p span,.paper_plane{
+    color: var(--1st-primary-color-light);
+    font-family: var(--font-family);
+    line-height: 162%;
+}
+#top .top-right  ul.top-content li{
+    border-right:  2px solid #fff;
+    height: 16px;
+    padding: 0 10px;
+}
+#top .top-right ul li a{
+    color:var(--common-color);
+}
+#top .top-right ul li select{
+    background: none;
+    border: none;
+    color: var(--common-color);
+}
+#top .top-right .social li a{
+    padding: 0 10px;
+    color: var(--common-color);
+}
+#top .top-right .social li a:hover{
+    color: var(--1st-primary-color-light);
+}
+/* top bar css start */
+
+/* nav bar css start */
+nav  .nav-item a{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--text-color);
+}
+nav  .nav-item a:hover{
+    color: var(--1st-primary-color-light);
+}
+nav .icon-button li button{
+    border:none;
+    background: none;
+    padding: 13px;
+    font-size: 18px;
+}
+nav .icon-button{
+    position: relative;
+}
+nav .icon-button li button span{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    background-color: var(--1st-primary-color-light);
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--common-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* banner starts */
+.banner-slider .slide{
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+}
+.banner-slider .slide .banner_cnt{
+    width: 45%;
+}
+.banner-slider .slide .banner_cnt h5{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #1d1d1d;
+    margin-bottom: 14px;
+}
+.banner-slider .slide .banner_cnt h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    color: #1d1d1d;
+    margin-bottom: 16px;
+}
+.banner-slider .slide .banner_cnt p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #1d1d1d;
+    margin-bottom: 30px;
+}
+.banner-slider .slide .banner_cnt a{
+    display: inline-block;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    color: var(--common-color);
+    background: var(--1st-primary-color-light);
+    padding: 13px 37px;
+    cursor: pointer;
+} 
+
+.banner-slider .slide .banner_cnt span{
+    margin-left: 10px;
+}
+#banner{
+    position: relative;
+}
+.bannerDots{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bannerDots li{
+    display: inline-block;
+}
+.bannerDots li button{
+    border-radius: 5px;
+    width: 10px;
+    height: 6px;
+    background-color: var(--common-color);
+    border: none;
+    color: transparent;
+    margin-right: 5.45px;
+    transition: 0.5s;
+}
+.bannerDots li.slick-active button{
+    width: 28.36px;
+    background-color: var(--1st-primary-color-light);
+}
+/* banner ends */
+
+/* beauty cream starts */
+#beauty-cream{
+    margin-top: 97px;
+}
+#beauty-cream .cream_card .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 21, 32, 0.4);
+    position: absolute;
+    text-align: center;
+    inset: 20px 20px;
+    transition: .7s;
+    opacity: 0;
+    visibility: hidden;
+}
+#beauty-cream .cream_card:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+#beauty-cream .cream_card .overlay h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 133%;
+    color: var(--common-color);
+}
+#beauty-cream .cream_card .overlay a{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--common-color);
+}
+#beauty-cream .cream_card .overlay a span{
+    margin-left: 8px;
+    width:10px;
+    height:16px;
+}
+/* beauty cream ends */
+
+/* new_arrivals_product starts */
+#new_arrivals_product{
+    margin-top: 112px;
+    position: relative;
+    margin-bottom: 100px;
+}
+#new_arrivals_product h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color);
+    margin-bottom: 24px;
+}
+.product_img img{
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.product_img .hover_img{
+    position: absolute;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.product_img:hover .hover_img{
+    opacity: 1;
+    visibility: visible;
+}
+.product_card .product_img_card{
+    position: relative;
+    width: 312px;
+}
+.product_img_card img{
+    width:312px;
+    height:310px;
+}
+.product_img_card .product_img_info ul li{
+    color:var(--1st-primary-color-light);
+    margin-bottom: 26px;
+
+}
+.product_img_info{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.product_img_info p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+    padding: 24px 0 2.5px;
+}
+.product_img_info h3{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: var(--text-color);
+}
+.product_card .product_img_card .discount{
+    position:absolute;
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    top:15px;
+    transform:rotate(90deg);
+    width: 52px;
+    height: 26px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding-left: 5px;
+}
+.product_card .product_img_card .product_overlay_icon{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product_card .product_img_card:hover .product_overlay_icon{
+    opacity:1;
+    visibility: visible;
+}
+.product_card .product_img_card .product_overlay_icon .btn1{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    position: absolute;
+    top: 65px;
+    right:15px;
+    transition: 0.5s;
+    transform : translateX(70px);
+}
+.product_card .product_img_card:hover .product_overlay_icon .btn1{
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    transform : translateX(0px);
+}
+.product_card .product_img_card .product_overlay_icon .btn2{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    position: absolute;
+    top: 105px;
+    right: 15px;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    transform : translateX(70px);
+}
+.product_card .product_img_card:hover .product_overlay_icon .btn2{
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    transform : translateX(0px);
+}
+.product_card .product_img_card .product_overlay_icon .btn3{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    position: absolute;
+    top: 145px;
+    right: 15px;
+    transition:0.5s;
+    transition-delay: 0.5s;
+    transform : translateX(70px);
+}
+.product_card .product_img_card:hover .product_overlay_icon .btn3{
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    transform : translateX(0px);
+}
+.product_card .product_img_card .product_overlay_icon .btn4{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    position: absolute;
+    top: 185px;
+    right: 15px;
+    transition:0.5s;
+    transition-delay: 0.7s;
+    transform : translateX(70px);
+}
+.product_card .product_img_card:hover .product_overlay_icon .btn4{
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    transform : translateX(0px);
+}
+/* left and right arrow */
+#new_arrivals_product .leftArrow,
+#new_arrivals_product .rightArrow{
+    position: absolute;
+    width: 45px;
+    height:45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    transition:0.5s;
+}
+#new_arrivals_product .leftArrow:hover,
+#new_arrivals_product .rightArrow:hover{
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+}
+#new_arrivals_product .leftArrow{
+    top: 50%;
+    left:30px;
+}
+#new_arrivals_product .rightArrow{
+    top:50%;
+    right:30px;
+}
+/* new_arrivals_product ends */
+
+/* cosmo_banner starts */
+#cosmo_banner{
+    background-image: url(./../image/cosmo_banner.jpg);
+    height:524px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+#cosmo_banner .inner_info{
+    width:45%;
+}
+#cosmo_banner .inner_info h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--common-color);
+    margin-bottom: 10px;
+}
+#cosmo_banner .inner_info p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--common-color);
+    margin-bottom: 30px;
+}
+#cosmo_banner .inner_info a{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--common-color);
+    padding: 13px 34px;
+    border: 1px solid var(--common-color);
+    transition: 0.7s;
+    cursor: pointer;
+}
+#cosmo_banner .inner_info a:hover{
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+}
+#cosmo_banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: #0000004f;
+    opacity: 1;
+    transform: skewX(40deg) scaleX(0);
+}
+#cosmo_banner:hover::after{
+    transition: 1.8s;
+    opacity: 0;
+    transform: skewX(40deg) scaleX(1);  
+}
+/* cosmo_banner ends */
+
+/* best seller product starts */
+#bestSeller{
+    margin-top: 112px 0 100px;
+}
+#bestSeller h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+    padding-bottom: 36px;
+}
+#bestSeller .seller_card{
+    position: relative;
+}
+#bestSeller .seller_card .seller_img_card .seller_img{
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+#bestSeller .seller_card .seller_img_card .hover_img_seller{
+    position: absolute;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+#bestSeller .seller_card .seller_img_card .seller_img:hover .hover_img_seller{
+    opacity: 1;
+    visibility: visible;
+}
+/* icons styling start */
+#bestSeller .seller_card .seller_img_card .overlay_icon{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#bestSeller .seller_card .seller_img_card:hover .overlay_icon{
+    opacity:1;
+    visibility: visible;
+}
+#bestSeller .seller_card .overlay_icon .icon1{
+    width:36px;
+    height:36px;
+    border-radius: 50%;
+    border: 0;
+    text-align: center;
+    line-height: 36px;
+    color:#000;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    transform: translateX(70px);
+    transition: 0.5s;
+}
+#bestSeller .seller_card .seller_img_card:hover .overlay_icon .icon1{
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    transform : translateX(0px);
+}
+#bestSeller .seller_card .overlay_icon .icon2{
+    width:36px;
+    height:36px;
+    border-radius: 50%;
+    border: 0;
+    text-align: center;
+    line-height: 36px;
+    color:#000;
+    background-color: #fff;
+    position: absolute;
+    top: 110px;
+    right: 15px;
+    transform: translateX(70px);
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}
+#bestSeller .seller_card .seller_img_card:hover .overlay_icon .icon2{
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    transform : translateX(0px);
+}
+#bestSeller .seller_card .overlay_icon .icon3{
+    width:36px;
+    height:36px;
+    border-radius: 50%;
+    border: 0;
+    text-align: center;
+    line-height: 36px;
+    color:#000;
+    background-color: #fff;
+    position: absolute;
+    top: 150px;
+    right: 15px;
+    transform: translateX(70px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+#bestSeller .seller_card .seller_img_card:hover .overlay_icon .icon3{
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    transform : translateX(0px);
+}
+#bestSeller .seller_card .overlay_icon .icon4{
+    width:36px;
+    height:36px;
+    border-radius: 50%;
+    border: 0;
+    text-align: center;
+    line-height: 36px;
+    color:#000;
+    background-color: #fff;
+    position: absolute;
+    top: 190px;
+    right: 15px;
+    transform: translateX(70px);
+    transition: 0.5s;
+    transition-delay: 0.7s;
+}
+#bestSeller .seller_card .seller_img_card:hover .overlay_icon .icon4{
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    transform : translateX(0px);
+}
+/* discount styling */
+#bestSeller .seller_card .seller_discount{
+    position:absolute;
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    top:15px;
+    transform:rotate(90deg);
+    width: 52px;
+    height: 26px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding-left: 5px;
+}
+.seller_img_card .seller_card_img_info ul li{
+    color:var(--1st-primary-color-light);
+    margin-bottom: 26px;
+}
+.seller_card_img_info{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 312px;
+}
+.seller_card_img_info p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+    padding: 24px 0 2.5px;
+}
+.seller_card_img_info h3{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* image musk effect */
+.product_btn a{
+    padding: 13px 27px;
+    background-color: var(--1st-primary-color-light);
+    color:#fff;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: var(--common-color);
+    margin-bottom: 100px;
+}
+
+/* best seller product ends */
+
+/* deal of the days start */
+#dealDays .dealBanner{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#dealDays h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+}
+#dealDays .clock{
+    padding: 7px 74px;
+    border-radius: 60px;
+    width: 424px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#dealDays .clock_card h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 142%;
+    color: var(--text-color);
+}
+#dealDays .clock_card p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: var(--paragraph-color);
+}
+#dealDays span{
+    font-size: 48px;
+    color:var(--1st-primary-color-light);
+}
+/* deal banner start */
+#dealDays .container .row{
+    padding: 75px 40px;
+    position: relative;
+    box-shadow:  5px 5px 10px #8484847c,
+             -5px -5px 10px #ffffff;
+    margin-top: 75px;
+}
+#dealDays .deal_banner{
+    height: 485px;
+    padding: 35px 40px;
+    margin-top:30px;
+    position: relative;
+}
+#dealDays .deal_banner::after{
+    content: " ";
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: #ffffff5e;
+    opacity: 1;
+    transform: scaleX(0);
+}
+#dealDays .deal_banner:hover::after{
+    opacity: 0;
+    transform: scaleX(1);
+    transition: 1.5s;
+}
+#dealDays .deal_banner::before{
+    content: " ";
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: #ffffff5e;
+    opacity: 1;
+    transform: scaleY(0);
+}
+#dealDays .deal_banner:hover::before{
+    opacity: 0;
+    transform: scaleY(1);
+    transition: 1.5s;
+}
+#dealDays .deal_banner_cnt{
+    width: 70%;
+    height: 80%;
+    padding: 20px 0 0;
+}
+.deal_banner_cnt h5{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--text-color);
+}
+.deal_banner_cnt h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color); 
+}
+.deal_banner_cnt p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    width: 350px;
+}
+.deal_banner_cnt .deal_price #discount_price{
+    font-family: var(--font-family);font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color);
+}
+.deal_banner_cnt .deal_price #real_price{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-decoration: line-through;
+    color: var(--paragraph-color);
+}
+.deal_banner_cnt a{
+    display: inline-block;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    color: var(--common-color);
+    background: #151A32;
+    padding: 13px 37px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 131px;
+}
+.deal_banner_cnt a #arrow{
+    margin-left: 10px;
+    font-size: 18px;
+    color:#fff;
+} 
+#dealDays{
+    position: relative;
+}
+.dealDots{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dealDots li{
+    display: inline-block;
+}
+.dealDots li button{
+    border-radius: 5px;
+    width: 10px;
+    height: 6px;
+    background-color: var(--common-color);
+    border: none;
+    color: transparent;
+    margin-right: 5.45px;
+    transition: 0.5s;
+}
+.dealDots li.slick-active button{
+    width: 28.36px;
+    background-color: var(--1st-primary-color-light);
+}
+/*
+/* deal banner end */
+/* deal of the days end */
