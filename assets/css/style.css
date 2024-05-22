@@ -654,14 +654,12 @@ nav .icon-button li button span{
 #dealDays .container .row{
     position: relative;
     padding: 75px 40px;
-    box-shadow:  5px 5px 10px #8484847c,
-             -5px -5px 10px #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 75px;
 }
 #dealDays .clock{
     background: #ffffff;
-    box-shadow:  5px 5px 10px #8484847c,
-             -5px -5px 10px #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     padding: 7px 74px;
     gap: 5px;
@@ -696,6 +694,7 @@ nav .icon-button li button span{
     padding: 35px 40px;
     margin-top:30px;
     position: relative;
+    margin:10px;
 }
 #dealDays .deal_banner::after{
     content: " ";

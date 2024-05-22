@@ -35,6 +35,7 @@ $(function(){
 $(function(){
   $('.deal_slider').slick({
       arrows: false,
+      infinite: true,
       dots: true,
       dotsClass: "dealDots container",
       slidesToShow: 2,
