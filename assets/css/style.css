@@ -651,11 +651,25 @@ nav .icon-button li button span{
     text-align: center;
     color: var(--text-color);
 }
+#dealDays .container .row{
+    position: relative;
+    padding: 75px 40px;
+    box-shadow:  5px 5px 10px #8484847c,
+             -5px -5px 10px #ffffff;
+    margin-top: 75px;
+}
 #dealDays .clock{
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #8484847c,
+             -5px -5px 10px #ffffff;
+    display: flex;
     padding: 7px 74px;
-    border-radius: 60px;
-    width: 424px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 5px;
+    border-radius: 50px;
+    margin-top: -120px;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
 }
 #dealDays .clock_card h3{
     font-family: var(--font-family);
@@ -677,13 +691,6 @@ nav .icon-button li button span{
     color:var(--1st-primary-color-light);
 }
 /* deal banner start */
-#dealDays .container .row{
-    padding: 75px 40px;
-    position: relative;
-    box-shadow:  5px 5px 10px #8484847c,
-             -5px -5px 10px #ffffff;
-    margin-top: 75px;
-}
 #dealDays .deal_banner{
     height: 485px;
     padding: 35px 40px;
@@ -787,9 +794,10 @@ nav .icon-button li button span{
 }
 .dealDots{
     position: absolute;
-    bottom: 25%;
+    bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
 }
 .dealDots li{
     display: inline-block;
@@ -798,7 +806,7 @@ nav .icon-button li button span{
     border-radius: 5px;
     width: 10px;
     height: 6px;
-    background-color: var(--common-color);
+    background-color: var(--a6aab7);
     border: none;
     color: transparent;
     margin-right: 5.45px;
@@ -806,7 +814,7 @@ nav .icon-button li button span{
 }
 .dealDots li.slick-active button{
     width: 28.36px;
-    background-color: var(--1st-primary-color-light);
+    background-color: var(--black);
 }
 /*
 /* deal banner end */
