@@ -27,20 +27,24 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
+    <!-- scroll to top -->
+    <div class="btn">
+       <a href=""><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
     <!-- ===Header Section Start === -->
     <header>
         <!-- top bar start -->
         <section id="top" class="d-none d-lg-block">
             <div class="container">
                 <div class="row .align-items-center">
-                    <div class="top_left col-md-6 ">
+                    <div class="top_left col-lg-5 col-md-6 ">
                         <p>
                             <i class=" paper_plane bi bi-send"></i>
                             FREE SHIPING world wide for all orders over <span>$150</span>
                         </p>
                     </div>
 
-                    <div class="top-right col-lg-6 col-md-6 d-flex justify-content-end">
+                    <div class="top-right col-lg-7 col-md-6 d-flex justify-content-end">
                         <ul class="d-flex top-content">
                             <li><a href="#"> Track Your Order</a></li>
                             <li><select name="" id="">
@@ -63,50 +67,63 @@
             </div>
         </section>
         <!-- top bar end -->
+
+        <!-- responsive top bar -->
+        
         <!-- ===Navbar Section Start === -->
-        <nav>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                  <a class="navbar-brand" href="#"><img src="./assets/image/Logo.svg" alt=""></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Home <i class="fa-solid fa-angle-down"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                        Pages <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Features <i class="fa-solid fa-angle-down"></i></a> 
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Blogs <i class="fa-solid fa-angle-down"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact <i class="fa-solid fa-angle-down"></i></a>
-                      </li>
-                    </ul>
-                    <div class="icon-button ms-auto">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li><button class="search"><i class="fa-solid fa-magnifying-glass"></i></button></li>
-                        <li><button><i class="fa-regular fa-user"></i></button></li>
-                        <li><button><i class="fa-regular fa-heart"></i></button></li>
-                        <li><button class="card_box_show_btn"><i
-                            class="fa-solid fa-bag-shopping"></i><span>0</span></button>
-                        </li>
-                      </ul>
-                  </div>
-                  </div>
-                </div>
-              </nav>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="./assets/image/Logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shop.html">Shop <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="./error.html">Error Page</a></li>
+                    <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                    <li><a class="dropdown-item" href="./shopdetails.html">Shope Details</a></li>
+                    <li><a class="dropdown-item" href="./compare.html">Compare</a></li>
+                    <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                    <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                    <li><a class="dropdown-item" href="./wishlist.html">Wishlist</a></li>
+                    <li><a class="dropdown-item" href="./blog.html">Blog</a></li>
+                    <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features <i class="fa-solid fa-angle-down"></i></a> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blogs <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+              </ul>
+              <div class="icon-button ms-auto">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li><button class="search"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                  <li><button><i class="fa-regular fa-user"></i></button></li>
+                  <li><button><i class="fa-regular fa-heart"></i></button></li>
+                  <li><button class="card_box_show_btn"><i
+                      class="fa-solid fa-bag-shopping"></i><span>0</span></button>
+                  </li>
+                </ul>
+            </div>
+            </div>
+          </div>
         </nav>
         <!-- ===Navbar Section END === -->
     </header>
@@ -159,7 +176,7 @@
     <section id="beauty-cream">
       <div class="container">
         <div class="row">
-          <div class="col-5 d-flex flex-column justify-content-between">
+          <div class="col-lg-5 d-flex flex-column justify-content-between">
             <div class="cream_card position-relative">
               <img src="./assets/image/cream_product1.jpg" alt="" class="img-fluid">
               <div class="overlay">
@@ -167,7 +184,7 @@
                 <a href="#">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
             </div>
-            <div class=" cream_card position-relative">
+            <div class="cream_card position-relative">
               <img src="./assets/image/cream_product3.png" alt="" class="img-fluid">
               <div class="overlay">
                 <h3>Natural Cream</h3>
@@ -194,7 +211,7 @@
       <div class="container">
         <h2 class="text-center">New Arrivals Products</h2>
         <div class="product_slider row justify-content-between">
-          <div class="product_card col-sm-6 col-lg-4 col-xl-3">
+          <div class="product_card col-md-6 col-sm-6 col-lg-6 col-xl-3">
             <div class="product_img_card">
               <div class="product_img">
                 <img src="./assets/image/product1.svg" alt="">
@@ -230,7 +247,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card col-sm-6 col-lg-4 col-xl-3">
+          <div class="product_card col-md-6 col-sm-12 col-lg-6 col-xl-3">
             <div class="product_img_card">
               <div class="product_img">
                 <img src="./assets/image/product2.jpg" alt="">
@@ -266,7 +283,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card col-sm-6 col-lg-4 col-xl-3">
+          <div class="product_card col-md-6 col-sm-12 col-lg-6 col-xl-3">
             <div class="product_img_card">
               <div class="product_img">
                 <img src="./assets/image/product3.jpg" alt="">
@@ -299,7 +316,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card col-sm-6 col-lg-4 col-xl-3">
+          <div class="product_card col-md-6 col-sm-12 col-lg-6 col-xl-3">
             <div class="product_img_card">
               <div class="product_img">
                 <img src="./assets/image/product4.jpg" alt="">
@@ -335,7 +352,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card col-sm-6 col-lg-4 col-xl-3">
+          <div class="product_card col-md-6 col-sm-12 col-lg-6 col-xl-3">
             <div class="product_img_card">
               <div class="product_img">
                 <img src="./assets/image/product5.webp" alt="">
@@ -371,7 +388,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card col-sm-6 col-lg-4 col-xl-3">
+          <div class="product_card col-md-6 col-sm-12 col-lg-6 col-xl-3">
             <div class="product_img_card">
               <div class="product_img">
                 <img src="./assets/image/product6.webp" alt="">
@@ -404,7 +421,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card col-sm-6 col-lg-4 col-xl-3">
+          <div class="product_card col-md-6 col-sm-12 col-lg-6 col-xl-3">
             <div class="product_img_card">
               <div class="product_img">
                 <img src="./assets/image/product7.webp" alt="">
@@ -476,16 +493,16 @@
                   <img class="hover_img_seller" src="./assets/image/seller1_hover.webp" alt="">
                 </div>
                 <div class="overlay_icon">
-                  <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
                     <i class="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
                     <i class="fa-solid fa-heart"></i>
                   </button>
-                  <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
                     <i class="fa-solid fa-eye"></i>
                   </button>
-                  <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Compare">
                     <i class="fa-solid fa-signal"></i>
                   </button>
                 </div>
@@ -512,16 +529,16 @@
                   <img class="hover_img_seller" src="./assets/image/seller2_hover.webp" alt="">
                 </div>
                 <div class="overlay_icon">
-                  <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
                     <i class="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
                     <i class="fa-solid fa-heart"></i>
                   </button>
-                  <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
                     <i class="fa-solid fa-eye"></i>
                   </button>
-                  <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Compare">
                     <i class="fa-solid fa-signal"></i>
                   </button>
                 </div>
@@ -548,16 +565,16 @@
                   <img class="hover_img_seller" src="./assets/image/seller3_hover.webp" alt="">
                 </div>
                 <div class="overlay_icon">
-                  <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
                     <i class="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
                     <i class="fa-solid fa-heart"></i>
                   </button>
-                  <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view">
                     <i class="fa-solid fa-eye"></i>
                   </button>
-                  <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Compare">
                     <i class="fa-solid fa-signal"></i>
                   </button>
                 </div>
@@ -584,16 +601,16 @@
                   <img class="hover_img_seller" src="./assets/image/seller4_hover.webp" alt="">
                 </div>
                 <div class="overlay_icon">
-                  <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
                     <i class="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
                     <i class="fa-solid fa-heart"></i>
                   </button>
-                  <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view">
                     <i class="fa-solid fa-eye"></i>
                   </button>
-                  <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Compare">
                     <i class="fa-solid fa-signal"></i>
                   </button>
                 </div>
@@ -622,16 +639,16 @@
                 <img class="hover_img_seller" src="./assets/image/seller5_hover.webp" alt="">
               </div>
               <div class="overlay_icon">
-                <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
                   <i class="fa-solid fa-cart-plus"></i>
                 </button>
-                <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
                   <i class="fa-solid fa-heart"></i>
                 </button>
-                <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
                   <i class="fa-solid fa-eye"></i>
                 </button>
-                <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Compare">
                   <i class="fa-solid fa-signal"></i>
                 </button>
               </div>
@@ -658,16 +675,16 @@
                 <img class="hover_img_seller" src="./assets/image/seller6_hover.webp" alt="">
               </div>
               <div class="overlay_icon">
-                <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
                   <i class="fa-solid fa-cart-plus"></i>
                 </button>
-                <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
                   <i class="fa-solid fa-heart"></i>
                 </button>
-                <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
                   <i class="fa-solid fa-eye"></i>
                 </button>
-                <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Compare">
                   <i class="fa-solid fa-signal"></i>
                 </button>
               </div>
@@ -694,16 +711,16 @@
                 <img class="hover_img_seller" src="./assets/image/seller7_hover.webp" alt="">
               </div>
               <div class="overlay_icon">
-                <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
                   <i class="fa-solid fa-cart-plus"></i>
                 </button>
-                <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
                   <i class="fa-solid fa-heart"></i>
                 </button>
-                <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view">
                   <i class="fa-solid fa-eye"></i>
                 </button>
-                <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Compare">
                   <i class="fa-solid fa-signal"></i>
                 </button>
               </div>
@@ -730,16 +747,16 @@
                 <img class="hover_img_seller" src="./assets/image/seller8_hover.webp" alt="">
               </div>
               <div class="overlay_icon">
-                <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon1 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart">
                   <i class="fa-solid fa-cart-plus"></i>
                 </button>
-                <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon2 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist">
                   <i class="fa-solid fa-heart"></i>
                 </button>
-                <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon3 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view">
                   <i class="fa-solid fa-eye"></i>
                 </button>
-                <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                <button type="button" class="icon4 btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Compare">
                   <i class="fa-solid fa-signal"></i>
                 </button>
               </div>
@@ -841,12 +858,328 @@
       </div>
     </section>
     <!-- deal of the days end -->
-    <!-- deal of the days banner start -->
 
+    <!-- beauty inspired section start -->
+    <section id="beauty_ins">
+      <div class="container">
+        <div class="d-flex">
+          <div class="left col-lg-6">
+            <div class="container">
+              <h3>Special Offer</h3>
+              <h2>Beauty Inspired by Real Shine In Life</h2>
+              <p>Completely grow maintainable niches via tactical services. Progressively synthesize market positioning paradigms for functional architectures. Professionally aggregate.</p>
+              <a href="#">Explore More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+          </div>
+          <div class="right col-lg-6 position-relative">
+            <img id="bg_img" src="./assets/image/beauty_inspired_banner_8.webp" alt="">
+            <a href="https://youtu.be/x0prF61CpHY?si=-J-UT9C0ikgfHjX8">
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- deal of the days banner end -->
+    <!-- beauty inspired section end -->
 
+    <!-- latest news section start -->
+    <section id="latest_news">
+      <div class="container">
+        <h2 class="text-center mb-5">Latest News</h2>
+          <div class="news_slider row justify-content-between">
+            <div class="news_card col-md-6 col-sm-6 col-lg-4 col-xl-3">
+              <img class="card-img-top mt-3 img-fluid" src="./assets/image/latest_blog_card_1.webp" alt="Card image cap" style="width:272px; display: block;margin: auto;">
+              <div class="card-body">
+                <h5>Best multi-step Beauty skin.</h5>
+                <p>Appropriately seize 24/365 markets without adaptive.</p>
+                <div class="link d-flex justify-content-between" style="border-top: 2px solid #ececec;">
+                  <div class="read_link">
+                    <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+                  <div class="read_date">
+                    Jan 04, 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news_card col-md-6 col-sm-6 col-lg-4 col-xl-3">
+              <img class="card-img-top mt-3 img-fluid" src="./assets/image/latest_blog_card_2.webp" alt="Card image cap" style="width:272px; display: block;margin: auto;">
+              <div class="card-body">
+                <h5>Herbal treatment for dry scal</h5>
+                <p>Appropriately seize 24/365 markets without adaptive.</p>
+                <div class="link d-flex justify-content-between" style="border-top: 2px solid #ececec;">
+                  <div class="read_link">
+                    <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+                  <div class="read_date">
+                    Jan 04, 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news_card col-md-6 col-sm-6 col-lg-4 col-xl-3">
+              <img class="card-img-top mt-3 img-fluid" src="./assets/image/latest_blog_card_3.webp" alt="Card image cap" style="width:272px; display: block;margin: auto;">
+              <div class="card-body">
+                <h5>Traveling Solo Is Awesome</h5>
+                <p>Appropriately seize 24/365 markets without adaptive.</p>
+                <div class="link d-flex justify-content-between" style="border-top: 2px solid #ececec;">
+                  <div class="read_link">
+                    <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+                  <div class="read_date">
+                    Jan 04, 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news_card col-md-6 col-sm-6 col-lg-4 col-xl-3">
+              <img class="card-img-top mt-3 img-fluid" src="./assets/image/latest_blog_card_4.webp" alt="Card image cap" style="width:272px; display: block;margin: auto;">
+              <div class="card-body">
+                <h5>A Beautiful Sunday Morning</h5>
+                <p>Appropriately seize 24/365 markets without adaptive.</p>
+                <div class="link d-flex justify-content-between" style="border-top: 2px solid #ececec;">
+                  <div class="read_link">
+                    <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+                  <div class="read_date">
+                    Jan 04, 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news_card col-md-6 col-sm-6 col-lg-4 col-xl-3">
+              <img class="card-img-top mt-3 img-fluid" src="./assets/image/latest_blog_card_5.webp" alt="Card image cap" style="width:272px; display: block;margin: auto;">
+              <div class="card-body">
+                <h5>Verify The Natural Product</h5>
+                <p>Appropriately seize 24/365 markets without adaptive.</p>
+                <div class="link d-flex justify-content-between" style="border-top: 2px solid #ececec;">
+                  <div class="read_link">
+                    <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+                  <div class="read_date">
+                    Jan 04, 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news_card col-md-6 col-sm-6 col-lg-4 col-xl-3">
+              <img class="card-img-top mt-3 img-fluid" src="./assets/image/latest_blog_card_6.webp" alt="Card image cap" style="width:272px; display: block;margin: auto;">
+              <div class="card-body">
+                <h5>All Product For Skin Care</h5>
+                <p>Appropriately seize 24/365 markets without adaptive.</p>
+                <div class="link d-flex justify-content-between" style="border-top: 2px solid #ececec;">
+                  <div class="read_link">
+                    <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+                  <div class="read_date">
+                    Jan 04, 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news_card col-md-6 col-sm- 12 col-lg-4 col-xl-3">
+              <img class="card-img-top mt-3 img-fluid" src="./assets/image/latest_blog_card_1.webp" alt="Card image cap" style="width:272px; display: block;margin: auto;">
+              <div class="card-body">
+                <h5>Best multi-step Beauty skin.</h5>
+                <p>Appropriately seize 24/365 markets without adaptive.</p>
+                <div class="link d-flex justify-content-between" style="border-top: 2px solid #ececec;">
+                  <div class="read_link">
+                    <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+                  <div class="read_date">
+                    Jan 04, 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news_card col-md-6 col-sm-12 col-lg-4 col-xl-3">
+              <img class="card-img-top mt-3 img-fluid" src="./assets/image/latest_blog_card_1.webp" alt="Card image cap" style="width:272px; display: block;margin: auto;">
+              <div class="card-body">
+                <h5>Best multi-step Beauty skin.</h5>
+                <p>Appropriately seize 24/365 markets without adaptive.</p>
+                <div class="link d-flex justify-content-between" style="border-top: 2px solid #ececec;">
+                  <div class="read_link">
+                    <a href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+                  <div class="read_date">
+                    Jan 04, 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- latest news section end -->
     <!-- ======= main section end ======= -->
+
+    <!-- =======Footer Section Start====== -->
+    <footer>
+      <div class="container">
+        <div class="footer_float">
+          <div class="d-flex">
+            <div class="col-lg-3 float_cnt">
+              <div class="d-flex">
+                <div class="float_cnt_img col-lg-4">
+                  <img src="./assets/image/truck.png" alt="">
+                </div>
+                <div class="float_cnt_info">
+                  <h4>FREE SHIPING</h4>
+                  <p>all orders over <span style="color: #FF6F61;">$150</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 float_cnt">
+              <div class="d-flex">
+                <div class="float_cnt_img col-lg-4">
+                  <img src="./assets/image/payment.png" alt="">
+                </div>
+                <div class="float_cnt_info">
+                  <h4>QUICK PAYMENT</h4>
+                  <p>100% secure payment</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 float_cnt">
+              <div class="d-flex">
+                <div class="float_cnt_img col-lg-4">
+                  <img src="./assets/image/free_retuen.png" alt="">
+                </div>
+                <div class="float_cnt_info">
+                  <h4>FREE RETURNS</h4>
+                  <p>Money back in 30 days</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 float_cnt">
+              <div class="d-flex">
+                <div class="float_cnt_img col-lg-4">
+                  <img src="./assets/image/truck.png" alt="">
+                </div>
+                <div class="float_cnt_info">
+                  <h4>24/7 SUPPORT</h4>
+                  <p>Get Quick Support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer icons start -->
+        <div class="footer_icons">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="social">
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></a></li>
+              </ul>
+            </div>
+            <div class="footer_logo">
+              <img src="./assets/image/footer_Logo.png" alt="">
+            </div>
+            <div class="footer_cards">
+              <img src="./assets/image/credit-card.png" alt="">
+            </div>
+        </div>
+      </div>
+
+      <div class="hr_line">
+        <hr class="line_between">
+      </div>
+
+      <div class="footer_details">
+        <div class="d-flex justify-content-evenly">
+          <div class="myaccount col-2">
+            <h4 class="details_title">My Account</h4>
+            <ul>
+              <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> My Account</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> View Cart</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Wishlist</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Compare</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> New Products</a></li>  
+            </ul>
+          </div>
+
+          <div class="support col-2">
+            <h4 class="details_title">Support</h4>
+            <ul>
+              <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Help</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Contact Us</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Feedback</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Customer Service</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Store Locations</a></li>  
+            </ul>
+          </div>
+
+          <div class="openingTime col-3">
+            <h4 class="details_title">Opening Time</h4>
+            <div class="day_time d-flex justify-content-between">
+              <div class="day col-6">Mon - Tue:</div>
+              <div class="time col-6"> 8AM - 10PM</div>
+            </div>
+
+            <div class="day_time d-flex justify-content-between">
+              <div class="day col-6">Wed:</div>
+              <div class="time col-6"> 8AM - 7PM</div>
+            </div>
+
+            <div class="day_time d-flex justify-content-between ">
+              <div class="day col-6">Fri: </div>
+              <div class="time col-6"> 7AM - 12PM</div>
+            </div>
+
+            <div class="day_time d-flex justify-content-between ">
+              <div class="day col-6">Sat:</div>
+              <div class="time col-6"> 9AM - 8PM</div>
+            </div>
+
+            <div class="day_time d-flex justify-content-between ">
+              <div class="day col-6">Sun: </div>
+              <div class="time col-6"> Closed</div>
+            </div>
+
+          </div>
+
+          <div class="contact col-3">
+            <h4 class="details_title">Contact Us</h4>
+            <div class="contact_details d-flex align-items-start mb-2">
+              <span class="icon me-3"><i class="fa-solid fa-location-dot"></i></span>
+              <p class="location">830 Broad way, New York, NY 10003, United States</p>
+            </div>
+
+            <div class="contact_details d-flex align-items-start mb-2">
+              <span class="icon me-3"><i class="fa-solid fa-phone"></i></span>
+              <p class="location">+18008660286</p>
+            </div>
+
+            <div class="contact_details d-flex align-items-start mb-2">
+              <span class="icon me-3"><i class="fa-solid fa-location-dot"></i></span>
+              <p class="location">aetor.info@gmail.com <br> info@aetor.com</p>
+            </div>
+          </div>
+
+          <div class="newsletter col-2">
+            <h4 class="details_title">Newsletter</h4>
+            <div class="letter_details">
+              <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+              <div class="news d-flex">
+                <input class="col-8" type="email" placeholder="Enter your email....">
+                <button class="subscribeBtn col-4">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </footer>
+    <!-- =======Footer Section End======= -->
     <!-- jquery js src -->
     <script src="./assets/vendors/js/jquery-3.7.1.min.js"></script>
     <!-- *COUNTDOWN JS  -->

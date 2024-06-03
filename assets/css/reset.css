@@ -4,13 +4,99 @@
     box-sizing: border-box;
     outline: 0;
 } 
+/* common css start */
+:root {
+	--1st-primary-color-light: #ff6f61;
+	--2nd-primary-color-dark: #ff5645;
+	--common-color: #fff;
+	--text-color: #11161e;
+	--hover-color: #151a32;
+	--paragraph-color: #444;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+	--a6aab7: #a6aab7;
+    --font-family: "Josefin Sans", sans-serif;
+    --second-family: "Roboto", sans-serif;
+}
+/* scroll to top button */
+.btn i{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color:#fff;
+    background-color: var(--1st-primary-color-light);
+}
+.btn{
+    border: 0;
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    font-size: 30px;
+    opacity:1;
+    visibility: hidden;
+    transform: translateY(-1000px);
+    transition: 0.5s;
+}
+.btn.active{
+    opacity:1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+/* common css end */
 ul{
     list-style-type: none;
 }
 a{
     text-decoration: none;
 }
-row{
+.row{
     display: flex;
     flex-wrap: wrap;
 }
+/* nav bar css start */
+.navbar-toggler{
+    background-color: var(--1st-primary-color-light);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    text-align: center;
+}
+nav  .nav-item a{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--text-color);
+}
+nav  .nav-item a:hover{
+    color: var(--1st-primary-color-light);
+}
+nav .icon-button li button{
+    border:none;
+    background: none;
+    padding: 13px;
+    font-size: 18px;
+}
+nav .icon-button{
+    position: relative;
+}
+nav .icon-button li button span{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    background-color: var(--1st-primary-color-light);
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--common-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+/* navbar css end */
+
